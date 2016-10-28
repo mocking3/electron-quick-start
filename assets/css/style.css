@@ -1,0 +1,51 @@
+div, h1, h2, span {
+    font-family: 微软雅黑;
+}
+
+.tile-area-controls {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
+.tile-group {
+    left: 100px;
+}
+
+.tile, .tile-small, .tile-sqaure, .tile-wide, .tile-large, .tile-big, .tile-super {
+    opacity: 0;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+
+.tile-content.iconic .icon-l {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    font-size: 64px;
+    top: 50%;
+    margin-top: -45px;
+    left: 50%;
+    margin-left: -44px;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .tile-area {
+        overflow-y: scroll;
+    }
+    .tile-area-controls {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tile-area {
+        overflow-y: scroll;
+    }
+
+    .tile-area-controls {
+        display: none;
+    }
+
+}
